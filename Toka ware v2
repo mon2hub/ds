@@ -1,0 +1,157 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local Win1 = DiscordLib:Window("Toka v2")
+local Tab1 = Win1:Server("Toka v2", "")
+
+--Main
+local Main = Tab1:Channel("Main")
+
+Main:Label("script made by:Toka")
+Main:Label("Discord:Toka5121")
+
+
+Main:Button("Auto Chest", function()
+    DiscordLib:Notification("Toka ware", "auto chest On", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tngaming123/TNGHubV1/main/Auto%20Chest.txt"))()
+    end)
+
+local sldr = Main:Slider("Walkspeed", 0, 1000, 400, function(t)
+    game.Players.LocalPlayer.Humanoid.Walkspeed = t
+    end)
+
+local sldr = Main:Slider("Jumppower", 0, 1000, 400, function(t)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
+    end)
+
+--Blox Fruit
+local Blox = Tab1:Channel("Blox Fruit")
+
+Blox:Button("Neva Hub",function()
+    DiscordLib:Notification("Toka ware", "Neva Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2"))()
+end)
+
+Blox:Button("HoHo Hub",function()
+    DiscordLib:Notification("Toka ware", "HoHo Hub Open", "Okay!")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+Blox:Button("Mango Hub",function()
+    DiscordLib:Notification("Toka ware", "Mango Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://gitlab.com/L1ZOT/mango-hub/-/raw/main/Mango-Bloxf-Fruits-Beta"))()
+end)
+
+Blox:Button("Yaretzi Hub",function()
+    DiscordLib:Notification("Toka ware", "Yaretzi Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DeletedUserCode/Yaretzi/main/GameSupport.lua"))()
+end)
+
+Blox:Button("Table Hub", function()
+    DiscordLib:Notification("Toka ware", "Table Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AltsegoD/scripts/egoD/tablekhoc.lua"))()
+end)
+
+Blox:Button("String Hub", function()
+    DiscordLib:Notification("Toka ware", "String Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/StringV2/StringHub/main/BF.txt", true))()
+end)
+
+Blox:Button("Mukuro Hub", function()
+    DiscordLib:Notification("Toka ware", "Mukuro Hub Open", "Okay!")
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+end)
+
+--KING LEGACY
+local King = Tab1:Channel("King Legacy")
+
+King:Button("Hyper Hub", function()
+    DiscordLib:Notification("Toka ware", "Hyper Hub Open", "Okay!")
+    pcall(function()
+        repeat wait() until game:IsLoaded()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
+    end)
+end)
+
+King:Button("Mukuro X Quartyz Hub", function()
+    DiscordLib:Notification("Toka ware", "Mukuro X Quartyz Hub Open", "Okay!")
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+end)
+
+King:Button("Ripper Hub", function()
+    DiscordLib:Notification("Toka ware", "Ripper Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))()
+end)
+
+King:Button("ONE X Hub", function()
+    DiscordLib:Notification("Toka ware", "ONE X Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xOne2/King-Legacy/main/README.md"))()
+end)
+
+--Arsenal
+local Arsenal = Tab1:Channel("Arsenal")
+
+Arsenal:Button("Owl Hub", function()
+    DiscordLib:Notification("Toka ware", "Owl Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+Arsenal:Button("Darkrai Hub", function()
+    DiscordLib:Notification("Toka ware", "Darkrai Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/arsenal-hub/main/Arsenal%20GamingScripter", true))()
+end)
+
+--Flyrace
+local FlyRace = Tab1:Channel("Fly Race")
+
+FlyRace:Button("VERSUS Hub", function()
+    DiscordLib:Notification("Toka ware", "VERSUS Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://versus-airlines.cf/V3/Loader.lua"))()
+end)
+
+FlyRace:Button("INF ALL Hub", function()
+    DiscordLib:Notification("Toka ware", "INF ALL Hub Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Amenteshades/robloxscripts/main/flyracemobile.lua"))()
+end)
+
+--PET SIMULATOR X
+local Pet = Tab1:Channel("Pet Simulaytor")
+
+Pet:Button("HugeGames Hub", function()
+    DiscordLib:Notification("Toka ware", "HugeGames Hub Open", "Okay!")
+    getgenv().AuthKey="YourHugeGamesKey"
+getgenv().LoadSettings={
+    UseSeperateSaves=false
+}
+loadstring(game:HttpGet("https://HugeGames.io/script"))()
+end)
+
+Pet:Button("Project-WD Hub", function()
+    DiscordLib:Notification("Toka ware", "Project-WD Hub Open", "Okay!")
+getgenv().key = "PASTE_KEY_HERE"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
+end)
+
+local Millionaire = Tab1:Channel("Millionaire tycoon")
+
+Millionaire:Button("Toka ware",function()
+    DiscordLib:Notification("Toka ware", "Millionaire tycoon Open", "Okay!")
+    loadstring(game:HttpGet("https://pastebin.com/raw/ySPSLC5q"))
+end)
+
+
+local da = Tab1:Channel("da hood")
+
+da:Button("zapped hub",function()
+    DiscordLib:Notification("Toka ware", "zapped hub", "Okay!")
+    loadstring(game:HttpGet('https://ekso.gq/raw/relases/zapped.lua'))()
+end)
+
+da:Button("aimlock(for mobile work for hyrogen and fluxus)",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QPJNQZ4N"))()
+    DiscordLib:Notification("Toka ware", "aimlock Open", "Okay!")
+end)
+    
+
+da:Button("SpaceX",function()
+    DiscordLib:Notification("SpaceX", "SpaceX Open", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood"))()
+end)
