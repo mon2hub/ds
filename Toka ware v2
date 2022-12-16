@@ -11,9 +11,9 @@ Main:Label("Discord:Toka5121")
 
 Main:Button("Auto Chest", function()
     DiscordLib:Notification("Toka ware", "auto chest On", "Okay!")
-   getgenv().Server_Hop = false
+   getgenv().Server_Hop = true
 getgenv().Chest_Farm = true
-getgenv().wait_Time = 10000000000000000000 -- Seconds
+getgenv().wait_Time = 60 -- Seconds
 
 local placeId = game.PlaceId
 if placeId == 2753915549 or placeId == 4442272183 or placeId == 7449423635 then
